@@ -2,19 +2,19 @@
 
 body
 {
-    background-image: linear-gradient(90deg, yellow, red );
+    background-image: linear-gradient(90deg, #9966cc, #ccccff );
     color: black;
     font-size: 12pt;
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
 }
-/*
+
 h1
 {   
-    background-image: linear-gradient(270deg, red, yellow );
+    background-image: linear-gradient(270deg, #0f07ff, #2539d1 );
     background-color: aqua;
-    color: black;
+    color: white;
     font-size: 30pt;
     font-family:Arial;
     text-align: center;
@@ -36,6 +36,15 @@ h2
     text-align: center;
 }
 
+h21
+{
+    color: black;
+    font-size: 20pt;
+    font-family:Arial;
+    text-align: left; 
+    text-align: center;  
+}
+
 h3
 {
     color: black;
@@ -54,7 +63,7 @@ li
 
 a
 {
-    color: rgb(0, 0, 0);
+    color: #2f32e4;
     font-size: 20pt;
     font-family:Arial;
     text-align: center;
@@ -71,8 +80,13 @@ table
         {
             border: 3px solid;
         }  
-    td {color: rgb(255, 0, 0);}
+    td {color: #0c16e1;}
     text-align: center;  
     margin: auto;    
 }
-*/
+
+table.table tr
+{
+    cursor: pointer;
+}
+
