@@ -1,92 +1,78 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-body
-{
-    background-image: linear-gradient(90deg, #9966cc, #ccccff );
-    color: black;
-    font-size: 12pt;
-    font-family:Arial, Helvetica, sans-serif;
+:root {
+    --bg-color: #222831;
+    --primary-color: #DDDDDD;
+    --secondary-color: #F05454;
+    --font: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
     text-align: center;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
     text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
 }
 
-h1
-{   
-    background-image: linear-gradient(270deg, #0f07ff, #2539d1 );
-    background-color: aqua;
-    color: white;
-    font-size: 30pt;
-    font-family:Arial;
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
     text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
 }
 
-p
-{
-    color: black;
-    font-size: 16pt;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center; 
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
-h2
-{
-    color: black;
-    font-size: 20pt;
-    font-family:Arial;
-    text-align: center;
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
 }
-
-h21
-{
-    color: black;
-    font-size: 20pt;
-    font-family:Arial;
-    text-align: left; 
-    text-align: center;  
-}
-
-h3
-{
-    color: black;
-    font-size: 20pt;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-li
-{
-    color: black;
-    font-size: 20pt;
-    font-family:Arial;
-    text-align: center;
-}
-
-a
-{
-    color: #2f32e4;
-    font-size: 20pt;
-    font-family:Arial;
-    text-align: center;
-    text-decoration: none;
-} 
-
-table
-{
-    background-color: white;
-    color: black;
-    font-size: 20pt;
-    font-family:Arial;   
-    table, td, th, tfoot 
-        {
-            border: 3px solid;
-        }  
-    td {color: #0c16e1;}
-    text-align: center;  
-    margin: auto;    
-}
-
-table.table tr
-{
-    cursor: pointer;
-}
-
